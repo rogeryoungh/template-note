@@ -1,0 +1,81 @@
+site_name: ZAFU ACM Wiki
+site_url: https://zafuacm.github.io/wiki
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    # - navigation.indexes
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+  palette:
+    scheme: default
+    primary: white
+    accent: red
+  favicon: favicon.ico
+  icon:
+    logo: material/school
+    repo: fontawesome/brands/github-alt
+  include_search_page: false
+  search_index_only: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - footnotes
+  - def_list
+  - attr_list
+  - pymdownx.tabbed
+  - toc:
+      permalink: ⚓︎
+      slugify: !!python/name:pymdownx.slugs.uslugify
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+
+copyright: Copyright 2020 - 2021 ZAFU ACM Team
+repo_url: https://github.com/zafuacm/wiki
+repo_name: zafuacm/wiki
+edit_uri: edit/main/docs/
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/zafuacm
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:rogeryoungh@foxmail.com
+
+
+extra_javascript:
+  - _static/config.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js
+
+extra_css:
+  - _static/extra.css
+
+nav:
+  - 关于:
+    - 简介: index.md
+  - 第一章:
+    - 测试: ch1/index.md
