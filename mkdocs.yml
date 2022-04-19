@@ -53,6 +53,16 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
+plugins:
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+      locale: zh
+  - git-authors:
+      show_contribution: true
+      show_line_count: true
+      count_empty_lines: true
+      fallback_to_empty: false
 
 copyright: Copyright 2020 - 2021 ZAFU ACM Team
 repo_url: https://github.com/zafuacm/wiki
